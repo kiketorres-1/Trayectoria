@@ -3,7 +3,7 @@ from rocketpy import Environment, SolidMotor, Rocket, Flight
 env = Environment(latitude= 40.3692414, longitude= -4.1222381, elevation= 667)
 
 import datetime
-tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+tomorrow = datetime.date.today()
 env.set_date((tomorrow.year, tomorrow.month, tomorrow.day, 10))
 env.set_atmospheric_model(type='Forecast', file="GFS")
 
