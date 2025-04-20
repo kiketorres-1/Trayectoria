@@ -72,6 +72,9 @@ Main = LightningTraveller.add_parachute(
     lag=1.5  # <-- COMPLETAR: Retardo de despliegue (s)
 )
 
+# añadir Payload desplegable
+
+
 # Creamos una simulación de vuelo
 test_flight = Flight(
     rocket=LightningTraveller,
