@@ -65,12 +65,14 @@ def main_chute_trigger(p, y):
 
 # Añadimos el paracaídas principal
 Main = LightningTraveller.add_parachute(
-    "Main",
+    name = "Main",
     cd_s=1.5,  # <-- COMPLETAR: Coeficiente de arrastre por superficie (m²)
-    trigger=main_chute_trigger,
+    trigger= 3000, # <-- COMPLETAR: Altura de despliegue (m)
     sampling_rate=105,  # <-- COMPLETAR: Frecuencia de muestreo (Hz)
     lag=1.5  # <-- COMPLETAR: Retardo de despliegue (s)
 )
+
+#Añadir Drogue
 
 # añadir Payload desplegable
 
