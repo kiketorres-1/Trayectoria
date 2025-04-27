@@ -183,7 +183,7 @@ fin_set = LightningTraveller.add_trapezoidal_fins(
 
 # Definimos la función trigger para el paracaídas
 def main_chute_trigger(p, y):
-    return y < 300 and p < 0  # Se despliega a menos de 300 m y en descenso
+    return y < 2000 and p < 20  # Se despliega a menos de 300 m y en descenso
 
 # Añadimos el paracaídas principal
 Main = LightningTraveller.add_parachute(
